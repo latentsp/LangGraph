@@ -1,0 +1,14 @@
+{
+  "dockerfile_lines": [],
+  "graphs": {
+    "chatbot": "./chatbot.py:graph",
+    "chatbot_sales": "./chatbot_sales.py:graph",
+    "chatbot_info_collect": "./chatbot_info_collect.py:graph",
+    "validate_human_input": "./validate_human_input.py:graph"
+  },
+  "env": "./.env",
+  "python_version": "3.11",
+  "dependencies": [
+    "."
+  ]
+}
