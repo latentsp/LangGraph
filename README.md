@@ -1,3 +1,36 @@
+# 🤖 Agent Workshop
+Welcome to the **Agent Workshop**! This workshop will guide you through building intelligent AI agents using LangGraph.
+
+## 📋 What You'll Learn
+
+- 🧠 **Agent Fundamentals**: Understanding what agents are and how they work
+- 🏗️ **LangGraph Constructs**: Building agent-based AI workflows
+- 🔄 **Message Passing & State Management & Memory & HIL**: How agents communicate and manage information
+- 💬 **Building Chats**: Creating interactive chatbots and conversational agents
+- 🛠️ **LangSmith**: Setting up and exploring features in langSmith
+
+## 🛠️ Prerequisites
+
+Before starting this workshop, make sure you have:
+
+- ✅ Python 3.8+ installed
+- ✅ VS Code with python notebooks
+- ✅ OpenAI API key
+- ✅ Basic Python knowledge
+- ✅ Basic familiarity with LangChain
+
+## 🎬 Setup Videos
+
+### 1. 📓 Python Notebook in VS Code
+Learn how to work with Jupyter notebooks in VS Code for the best development experience:
+**[Watch: Python Notebook in VS Code](https://youtu.be/2FBfy2mgM-0)**
+
+### 2. 🔑 Configuring .env File with OpenAI Key
+Set up your environment variables and API keys securely:
+**[Watch: Configuring .env File with OpenAI Key](https://youtu.be/-tbfeOBxtIE)**
+
+## ⚡ Quick Start
+
 ### Create an environment and install dependencies
 #### Mac/Linux/WSL
 ```
@@ -24,7 +57,15 @@ $ export API_ENV_VAR="your-api-key-here"
 ```
 PS> $env:API_ENV_VAR = "your-api-key-here"
 ```
+### Running the chatbot to collect age agent
+To run the chatbot information collection script:
 
+```bash
+cd langchain-academy
+pip install -r requirements.txt
+cd module-3
+python 01_chatbot_collect_age.py
+```
 ### Set up LangGraph Studio
 
 * LangGraph Studio is a custom IDE for viewing and testing agents.
@@ -56,16 +97,4 @@ done
 echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
 
-### Running the chatbot to collect age agent
-To run the chatbot information collection script:
 
-```bash
-# Navigate to the langchain-academy directory
-cd langchain-academy
-
-# Install the requirements
-pip install -r requirements.txt
-
-# Navigate to the studio directory and run the script
-python chatbot_collect_age.py
-```
