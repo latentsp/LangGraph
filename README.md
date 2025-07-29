@@ -49,15 +49,8 @@ PS> pip install -r requirements.txt
 ### Setting up env variables
 Briefly going over how to set up environment variables. You can also 
 use a `.env` file with `python-dotenv` library.
-#### Mac/Linux/WSL
-```
-$ export API_ENV_VAR="your-api-key-here"
-```
-#### Windows Powershell
-```
-PS> $env:API_ENV_VAR = "your-api-key-here"
-```
-### Running the chatbot to collect age agent
+
+### Running the chatbot to collect human age
 To run the chatbot information collection script:
 
 ```bash
@@ -66,7 +59,7 @@ pip install -r requirements.txt
 cd module-3
 python 01_chatbot_collect_age.py
 ```
-### Set up LangGraph Studio
+### Set up LangGraph Studio (Optional)
 
 * LangGraph Studio is a custom IDE for viewing and testing agents.
 * Studio can be run locally and opened in your browser on Mac, Windows, and Linux.
