@@ -6,6 +6,11 @@ from langgraph.graph import StateGraph
 from langgraph.types import interrupt, Command, Interrupt
 from langgraph.checkpoint.memory import InMemorySaver
 
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv("../.env")
+
 # Define graph state
 class State(TypedDict):
     age: int

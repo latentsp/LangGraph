@@ -104,8 +104,8 @@ def run_interactive_graph():
     print("\nFinal result:", result)
 
 if __name__ == "__main__":
-    load_dotenv()
+    load_dotenv("../.env")
     openai_api_key = os.getenv("OPENAI_API_KEY")
     llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=openai_api_key)
-
+    print("key: ", openai_api_key)
     run_interactive_graph()
